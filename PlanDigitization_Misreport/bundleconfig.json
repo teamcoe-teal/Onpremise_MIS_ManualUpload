@@ -1,0 +1,75 @@
+[
+  {
+    "outputFileName": "wwwroot/assets/jquery/jquery.min.js",
+    "inputFiles": [
+      "wwwroot/assets2/vendor/jquery/jquery.js",
+      "wwwroot/assets2/vendor/jquery-browser-mobile/jquery.browser.mobile.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/assets/jquery/jquery-validate.min.js",
+    "inputFiles": [
+      "wwwroot/assets2/vendor/jquery/jquery.min.js",
+      "wwwroot/assets2/vendor/jquery-validation/jquery.validate.min.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/assets/modernizr/modernizr.min.js",
+    "inputFiles": [
+      "wwwroot/assets2/vendor/modernizr/modernizr.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/assets/vendor/vendor.min.js",
+    "inputFiles": [
+      "wwwroot/assets2/vendor/bootstrap/js/bootstrap.js",
+      "wwwroot/assets2/vendor/nanoscroller/nanoscroller.js",
+      "wwwroot/assets2/vendor/magnific-popup/jquery.magnific-popup.js",
+      "wwwroot/assets2/vendor/jquery-placeholder/jquery-placeholder.js",
+      "wwwroot/assets2/vendor/bootstrap-datepicker/js/bootstrap-datepicker.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/assets/theme/theme.min.js",
+    "inputFiles": [
+      "wwwroot/assets2/javascripts/theme.js",
+      "wwwroot/assets2/javascripts/theme.custom.js",
+      "wwwroot/assets2/javascripts/theme.init.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/assets/vendor/vendor.min.css",
+    "inputFiles": [
+      "wwwroot/assets2/vendor/bootstrap/css/bootstrap.css",
+      "wwwroot/assets2/vendor/font-awesome/css/font-awesome.css",
+      "wwwroot/assets2/vendor/magnific-popup/magnific-popup.css",
+      "wwwroot/assets2/vendor/bootstrap-datepicker/css/bootstrap-datepicker3.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/assets/css/theme.min.css",
+    "inputFiles": [
+      "wwwroot/assets2/stylesheets/theme.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/assets/css/skin.min.css",
+    "inputFiles": [
+      "wwwroot/assets2/stylesheets/skins/default.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/assets/css/theme-custom.min.css",
+    "inputFiles": [
+      "wwwroot/assets2/stylesheets/theme-custom.css"
+    ],
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    "sourceMap": false
+  }
+] 
+
+
+          
