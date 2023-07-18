@@ -129,32 +129,32 @@ namespace LessonLearntPortalWeb.Repository
 
 
                     ////production summary
-                    IXLWorksheet ws = workbook.Worksheet(sheetno);
-                    Console.WriteLine(ws + " : " + ws.Cell("F" + 11).Value);
-                    ws.Cell("F" + 11).Value = date;
-                    if (dt2.Rows.Count > 0)
-                    {
+                  //  IXLWorksheet ws = workbook.Worksheet(sheetno);
+                    //Console.WriteLine(ws + " : " + ws.Cell("F" + 11).Value);
+                    //ws.Cell("F" + 11).Value = date;
+                    //if (dt2.Rows.Count > 0)
+                    //{
                         // Adding HeaderRow.
-                        Console.WriteLine(ws.Cell("A" + 2).Value);
-                        Console.WriteLine(ws.Cell("B" + 2).Value);
-                        Console.WriteLine(ws.Cell("C" + 2).Value);
-                        ws.Cell("A" + 2).Value = dt2.Columns[0].ColumnName;
-                        ws.Cell("B" + 2).Value = dt2.Columns[1].ColumnName;
-                        ws.Cell("C" + 2).Value = dt2.Columns[2].ColumnName;
+                        //Console.WriteLine(ws.Cell("A" + 2).Value);
+                        //Console.WriteLine(ws.Cell("B" + 2).Value);
+                        //Console.WriteLine(ws.Cell("C" + 2).Value);
+                        //ws.Cell("A" + 2).Value = dt2.Columns[0].ColumnName;
+                        //ws.Cell("B" + 2).Value = dt2.Columns[1].ColumnName;
+                        //ws.Cell("C" + 2).Value = dt2.Columns[2].ColumnName;
 
                         // Adding DataRows.
-                        for (int i = 0; i < dt2.Rows.Count; i++)
-                        {
-                            ws.Cell("A" + (i + 3)).Value = dt2.Rows[i][0].ToString();
-                            ws.Cell("B" + (i + 3)).Value = Convert.ToDecimal(dt2.Rows[i][1]);
-                            ws.Cell("C" + (i + 3)).Value = Convert.ToDecimal(dt2.Rows[i][2]);
+                        //for (int i = 0; i < dt2.Rows.Count; i++)
+                        //{
+                        //    ws.Cell("A" + (i + 3)).Value = dt2.Rows[i][0].ToString();
+                        //    ws.Cell("B" + (i + 3)).Value = Convert.ToDecimal(dt2.Rows[i][1]);
+                        //    ws.Cell("C" + (i + 3)).Value = Convert.ToDecimal(dt2.Rows[i][2]);
 
-                        }
-                    }
+                        //}
+                   // }
                     //(XLCellValue)
                     //(XLCellValue)
                     //(XLCellValue)
-                    workbook.Save();
+                 //   workbook.Save();
 
 
                     ////Top 10 rejections
@@ -739,9 +739,10 @@ namespace LessonLearntPortalWeb.Repository
 
                     int sum1 = sum(columnName);
 
-                    //DateTime dat =  Convert.ToDateTime(date).AddDays(1);
+                  //  DateTime dat =  Convert.ToDateTime(date).AddDays(-1);
                     DateTime dat = Convert.ToDateTime(date);
-
+                    
+                    
                     var dates = new List<DateTime>();
 
                     var firstDayOfMonth = new DateTime(dat.Year, dat.Month, 1);
@@ -808,7 +809,7 @@ namespace LessonLearntPortalWeb.Repository
 
                         ////DAY-WISE production qty
 
-                        ws11.Cell(columnNamadd + "4").Value = dates[i11].ToString("yyyy-MM-dd");
+                        ws11.Cell(columnNamadd + "4").Value = dates[i11].ToString("dd-MM-yyyy");
                         ws11.Cell(columnNamadd + "4").Style.Font.Bold = true;
                         ws11.Cell(columnNamadd + "4").Style.Alignment.SetHorizontal(XLAlignmentHorizontalValues.Center);
 
@@ -932,7 +933,7 @@ namespace LessonLearntPortalWeb.Repository
 
                     ////Date in Index page
                     IXLWorksheet ws12 = workbook.Worksheet(1);
-                    string date1 = DateTime.Today.ToString("dd-MM-yyyy");
+                    string date1 = DateTime.Today.ToString("dd-mm-yyyy");
                     //string date2 = DateTime.Today.AddDays(-1).ToString("dd-MM-yyyy");
                     ws12.Cell("E2").Value = companyName + " - Daily Production Report ";
                     ws12.Cell("J7").Value = machinename;

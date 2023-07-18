@@ -29,7 +29,7 @@ namespace LessonLearntPortalWeb
                     builder =>
                     {
                         //builder.WithOrigins("https://localhost:44348")
-                         builder.WithOrigins("http://localhost:62292" , "https://localhost:44348", "https://teali4metricstest.azurewebsites.net/", "*")
+                         builder.WithOrigins("http://localhost:62292" , "https://localhost:44348", "http://10.135.0.33:8080", "http://10.135.0.33:8080/Frontend/", "https://teali4metricstest.azurewebsites.net/", "*")
                                             .AllowAnyHeader()
                                             .AllowAnyMethod()
                                            .AllowCredentials();

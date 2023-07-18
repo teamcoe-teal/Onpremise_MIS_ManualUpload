@@ -747,23 +747,23 @@ namespace LessonLearntPortalWeb.Repository
                     smtp.Credentials = new System.Net.NetworkCredential(dt.Rows[0]["Smtp_user"].ToString(), dt.Rows[0]["Smtp_pass"].ToString());
                     smtp.EnableSsl = true;
                     int i = 0;
-                    //for (i = 0; i < MailToset.Length; i++)
-                    //{
-                    //    mail.To.Add(MailToset[i]);
-                    //}
-                    //i = 0;
-                    //for (i = 0; i < CCset.Length; i++)
-                    //{
-                    //    mail.CC.Add(CCset[i]);
-                    //}
-                    //i = 0;
-                    //for (i = 0; i < BCCset.Length; i++)
-                    //{
-                    //    mail.Bcc.Add(BCCset[i]);
-                    //}
-                    mail.To.Add("venkataprasad@titan.co.in");
-                    mail.To.Add("annefebronia@titan.co.in");
-                    mail.To.Add("pavithraashokan@titan.co.in");
+                    for (i = 0; i < MailToset.Length; i++)
+                    {
+                        mail.To.Add(MailToset[i]);
+                    }
+                    i = 0;
+                    for (i = 0; i < CCset.Length; i++)
+                    {
+                        mail.CC.Add(CCset[i]);
+                    }
+                    i = 0;
+                    for (i = 0; i < BCCset.Length; i++)
+                    {
+                        mail.Bcc.Add(BCCset[i]);
+                    }
+                   // mail.To.Add("venkataprasad@titan.co.in");
+                    //mail.To.Add("annefebronia@titan.co.in");
+                    //mail.To.Add("pavithraashokan@titan.co.in");
 
 
 

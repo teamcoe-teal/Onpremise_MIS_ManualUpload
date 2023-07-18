@@ -53,7 +53,7 @@ namespace LessonLearntPortalWeb.Repository
             {
 
             
-                date = Convert.ToDateTime(date).AddDays(-1).ToString("dd-MM-yyyy");
+                date = Convert.ToDateTime(date).AddDays(-1).ToString("yyyy-MM-dd");
                 string datetoaddinTime = Convert.ToDateTime(date).AddDays(-1).ToString("yyyy-MM-dd");
 
                 DataTable dt10 = new DataTable();
